@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: hpuefi-mod
+Upstream-Contact: HP Development Company, L.P.
+Source: https://ftp.ext.hp.com/pub/caps-softpaq/cmit/linuxtools/HP_LinuxTools.html
+
+Files: *
+Copyright: 2018-2024 HP Development Company, L.P. 
+License: Proprietary

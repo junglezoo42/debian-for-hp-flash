@@ -1,0 +1,5 @@
+#!/usr/bin/dh-exec
+hp-flash => /usr/sbin/hp-flash
+hp-repsetup => /usr/sbin/hp-repsetup
+builds/hp-flash.u2204 => /opt/hp/hp-flash/bin/hp-flash
+builds/hp-repsetup.u2204 => /opt/hp/hp-flash/bin/hp-repsetup
