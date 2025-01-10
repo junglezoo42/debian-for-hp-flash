@@ -9,11 +9,11 @@ Testsuite: autopkgtest-pkg-dkms
 Rules-Requires-Root: no
 
 Package: hp-flash
-Architecture: amd64 
+Architecture: amd64
 Depends: ${misc:Depends}
 Description: HP Firmware Upgrade Utility for Linux
- The hp-flash utility is designed to update the computer system 
+ The hp-flash utility is designed to update the computer system
  firmware (UEFI BIOS) from a Linux environment.
  .
- In order to use hp-flash, the hpuefi loadable kernel module 
+ In order to use hp-flash, the hpuefi loadable kernel module
  (driver) must be loaded (inserted) and connected to /dev/hpuefi.
