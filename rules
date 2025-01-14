@@ -1,10 +1,27 @@
 #!/usr/bin/make -f
 #export DH_VERBOSE = 1
 
+ifeq ($(shell lsb_release -c -s),focal)
+    version := 2004
+else ifeq ($(shell lsb_release -c -s),jammy)
+    version := 2204
+else ifeq ($(shell lsb_release -c -s),noble)
+    version := 2204
+endif
+
 include /usr/share/dpkg/pkg-info.mk
 
 %:
 	dh $@
+
+build:
+	mv builds/hp-flash.u$(version) builds/hp-flash
+	mv builds/hp-repsetup.u$(version) builds/hp-repsetup
+
+clean:
+	-mv builds/hp-flash builds/hp-flash.u$(version)
+	-mv builds/hp-repsetup builds/hp-repsetup.u$(version)
+	dh_clean
 
 override_dh_auto_clean:
 	@echo CLEAN
@@ -14,3 +31,9 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	@echo NO AUTO INSTALL
+
+override_dh_install:
+	dh_install --package=hp-flash hp-flash usr/sbin/
+	dh_install --package=hp-flash hp-repsetup usr/sbin
+	dh_install --package=hp-flash builds/hp-flash opt/hp/hp-flash/bin
+	dh_install --package=hp-flash builds/hp-repsetup opt/hp/hp-flash/bin
