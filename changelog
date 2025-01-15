@@ -1,3 +1,9 @@
+hp-flash (3.24-0unofficial+focal4) focal-backports; urgency=medium
+
+  * New package release
+
+ -- junglezoo42 <junglezoo42@mail.de>  Wed, 15 Jan 2025 09:00:12 +0000
+
 hp-flash (3.24-0unofficial+focal3) focal-backports; urgency=medium
 
   * New package release
