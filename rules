@@ -6,7 +6,7 @@ ifeq ($(shell lsb_release -c -s),focal)
 else ifeq ($(shell lsb_release -c -s),jammy)
     version := 2204
 else ifeq ($(shell lsb_release -c -s),noble)
-    version := 2204
+    version := 2404
 endif
 
 include /usr/share/dpkg/pkg-info.mk
