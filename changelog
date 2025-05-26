@@ -1,3 +1,9 @@
+hp-flash (3.25-0junglezoo42+jammy2) jammy; urgency=medium
+
+  * New package release
+
+ -- junglezoo42 <junglezoo42@mail.de>  Mon, 26 May 2025 09:51:47 +0000
+
 hp-flash (3.25-0junglezoo42+jammy1) jammy; urgency=medium
 
   * New upstream release
